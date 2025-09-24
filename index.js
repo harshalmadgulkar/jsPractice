@@ -13,3 +13,23 @@
 //         console.log(val);
 // 	}
 // });
+
+// 3. Sum of all numbers in array
+let arr = [1, 2, 3, 4, 57];
+// Approach 1
+// let sum = 0;
+// arr.forEach(function (val) {
+// 	sum = sum + val;
+// });
+// console.log(sum);
+
+// Approach 2
+// function sum(array) {
+// 	let sum = 0;
+
+// 	for (let i = 0; i < arr.length; i++) {
+// 		sum = sum + arr[i];
+// 	}
+// 	console.log(sum);
+// }
+// sum(arr);
