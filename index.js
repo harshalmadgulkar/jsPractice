@@ -18,7 +18,7 @@
 let arr = [1, 2, 3, 4, 57];
 // Approach 1
 // let sum = 0;
-// arr.forEach(function (val) {
+// arr.forEach((val) => {
 // 	sum = sum + val;
 // });
 // console.log(sum);
