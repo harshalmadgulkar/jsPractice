@@ -15,7 +15,7 @@
 // });
 
 // 3. Sum of all numbers in array
-let arr = [1, 2, 3, 4, 57];
+// let arr = [1, 2, 3, 4, 57];
 // Approach 1
 // let sum = 0;
 // arr.forEach((val) => {
@@ -33,3 +33,18 @@ let arr = [1, 2, 3, 4, 57];
 // 	console.log(sum);
 // }
 // sum(arr);
+
+// 4. addition of array elements other than string
+let arr = [1, 2, 3, "4", 57];
+// Approach 1 Brutforcce
+function filterwithoutstring(array) {
+	let sum = 0;
+	for (i = 0; i < array.length; i++) {
+		if (typeof array[i] !== "string") {
+			sum = sum + array[i];
+		}
+	}
+	console.log(sum);
+}
+
+filterwithoutstring(arr);
