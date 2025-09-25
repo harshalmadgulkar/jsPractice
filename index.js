@@ -35,7 +35,7 @@
 // sum(arr);
 
 // 4. addition of array elements other than string
-let arr = [1, 2, 3, "4", 57];
+// let arr = [1, 2, 3, "4", 57];
 // Approach 2 forEach
 // let sum = 0;
 // arr.forEach((val) => {
@@ -57,3 +57,6 @@ let arr = [1, 2, 3, "4", 57];
 // }
 
 // filterwithoutstring(arr);
+
+
+// 5. Guess output to understand synchronous vs asynchronous
