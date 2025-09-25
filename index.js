@@ -84,3 +84,16 @@
 // So all 10 functions you push into arr will eventually call console.log(i) where i is 10.
 
 // How can we solve this ----> using let
+
+// 6. Guess output Async
+// console.log("1");
+// console.log("2");
+// console.log("3");
+// setTimeout(function () {
+// 	console.log("4");
+// }, 5000);
+// console.log("5");
+
+
+// Answer: 1 2 3 5 (5sec delay) 4
+// first complete all sync functions then async
