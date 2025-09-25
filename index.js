@@ -60,18 +60,27 @@
 
 // 5. Guess output to understand synchronous vs asynchronous
 
-var arr = [];
+// var arr = [];
 
-for (var i = 0; i < 10; i++) {
-	arr.push(function () {
-		setTimeout(function () {
-			console.log(i);
-		}, 1000);
-	});
-}
+// for (var i = 0; i < 10; i++) {
+// 	arr.push(function () {
+// 		setTimeout(function () {
+// 			console.log(i);
+// 		}, 1000);
+// 	});
+// }
 
-for (var i = 0; i < 10; i++) {
-	arr[i]();
-}
+// for (var i = 0; i < 10; i++) {
+// 	arr[i]();
+// }
 
-// 10 times 10 print hoga
+// Output: 10 times 10 print hoga
+
+// You're using var i, which is function-scoped, not block-scoped.
+// So there's only one shared i variable for all iterations.
+// You're creating 10 functions that reference this shared i.
+// The setTimeout callback will execute after the loop has completed.
+// At the time the setTimeout runs, the loop has already finished, and i === 10.
+// So all 10 functions you push into arr will eventually call console.log(i) where i is 10.
+
+// How can we solve this ----> using let
