@@ -15,3 +15,14 @@
 // }
 
 // console.log(checkArray([1]));
+
+// 3. Clone given array
+
+function cloneArray(input) {
+	var clone = [...input];
+	console.log(clone);
+	return clone;
+}
+
+cloneArray([1, 2, 3]);
+cloneArray("i");
