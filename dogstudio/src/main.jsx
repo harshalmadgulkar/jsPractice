@@ -1,9 +1,10 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import App from './App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='text-red-500'>Hi</div>
-  </StrictMode>,
+    <App />
+  </StrictMode>
 )
