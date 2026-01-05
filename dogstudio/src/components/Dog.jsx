@@ -1,18 +1,13 @@
-import { useThree } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls, useGLTF } from '@react-three/drei'
 
 const Dog = () => {
 
-    useThree(({ camera, scene, gl }) => {
-        console.log(camera.position);
-    })
+    const model = useGLTF("./models/dog.drc.glb");
 
     return (
         <>
-            <mesh>
-                <meshBasicMaterial color={0x00FF00} />
-                <boxGeometry args={[1, 1, 1]} />
-            </mesh>
+            <primitive object={model.scene} position={[0, 0, 0]} />
+            <directionalLight position={[0, 5, 5]} color={0xFFFFFF} intensity={10} />
             <OrbitControls />
         </>
     )
