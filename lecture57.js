@@ -149,13 +149,13 @@
 
 // ? call, apply, bind
 
-let obj = {
-    name: "harsh",
-};
+// let obj = {
+//     name: "harsh",
+// };
 
-function abcd(a, b, c) {
-    console.log(this, a, b, c);
-}
+// function abcd(a, b, c) {
+//     console.log(this, a, b, c);
+// }
 // 1. Normal function call (most common mistake)
 // abcd(obj, 1, 2, 3);
 // Output: window, obj, 1, 2
