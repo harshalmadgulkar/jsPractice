@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma-Style Design Tool</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="toolbar">
+        <button id="add-rect">Add Rectangle</button>
+        <button id="add-text">Add Text</button>
+    </div>
+    <div id="editor">
+        <div id="canvas"></div>
+        <div id="layers-panel">
+            <h3>Layers</h3>
+            <ul id="layers-list"></ul>
+        </div>
+        <div id="properties-panel">
+            <h3>Properties</h3>
+            <label>Width: <input id="prop-width" type="number"></label><br>
+            <label>Height: <input id="prop-height" type="number"></label><br>
+            <label>Background Color: <input id="prop-bgcolor" type="color"></label><br>
+            <label>Text Content: <textarea id="prop-text"></textarea></label><br>
+        </div>
+    </div>
+    <div id="export-buttons">
+        <button id="export-json">Export JSON</button>
+        <button id="export-html">Export HTML</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
