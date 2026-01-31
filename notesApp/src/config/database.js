@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 function connectDB() {
-    mongoose.connect(process.env.mongodbUri).then(() => {
+    mongoose.connect(process.env.MONGO_URI).then(() => {
         console.log("Connected to Database");
     }).catch((err) => {
         console.error(err);
